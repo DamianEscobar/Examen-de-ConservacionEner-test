@@ -158,27 +158,6 @@ export default function App() {
             </p>
           )}
 
-          {mostrarResultado && (
-            <button
-              onClick={() => {
-                setRespuestas({})
-                setMostrarResultado(false)
-              }}
-              style={{
-                marginTop: '1rem',
-                padding: '0.5rem 1.5rem',
-                backgroundColor: '#ffc107',
-                color: 'black',
-                border: 'none',
-                borderRadius: '5px',
-                cursor: 'pointer',
-                fontWeight: 'bold'
-              }}
-            >
-              Reiniciar este examen
-            </button>
-          )}
-
         </div>
       ))}
 
@@ -206,6 +185,28 @@ export default function App() {
           <p className="text-lg">Respuestas correctas: {calcularResultado()} de {preguntas.length}</p>
         </div>
       )}
+
+      {mostrarResultado && (
+            <button
+              onClick={() => {
+                setRespuestas({})
+                setMostrarResultado(false)
+              }}
+              style={{
+                marginTop: '1rem',
+                padding: '0.5rem 1.5rem',
+                backgroundColor: '#ffc107',
+                color: 'black',
+                border: 'none',
+                borderRadius: '5px',
+                cursor: 'pointer',
+                fontWeight: 'bold'
+              }}
+            >
+              Reiniciar este examen
+            </button>
+        )}
+
     </div>
   )
 }
