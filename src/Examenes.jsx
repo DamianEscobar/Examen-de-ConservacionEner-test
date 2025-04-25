@@ -247,7 +247,273 @@ const examenes = [
         explicacion: "Todavía no se comercializa a gran escala en el país."
       }
     ]
+  },
+  {
+    titulo: "Examen 3",
+    preguntas: [
+      {
+        tipo: "opcion",
+        enunciado: "1. ¿Qué define la primera ley de la termodinámica?",
+        opciones: [
+          "La degradación de energía",
+          "La imposibilidad del movimiento perpetuo",
+          "La conservación de la energía interna y el trabajo",
+          "El aumento de la entropía"
+        ],
+        correcta: "La conservación de la energía interna y el trabajo",
+        explicacion: "Establece que el calor suministrado se reparte entre el trabajo realizado y el cambio en energía interna."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "2. ¿Qué relación expresa la fórmula Q = ΔU − W?",
+        opciones: [
+          "La eficiencia de motores",
+          "La transferencia de energía térmica",
+          "La ley de conservación del momento",
+          "La conversión de energía cinética"
+        ],
+        correcta: "La transferencia de energía térmica",
+        explicacion: "Describe cómo el calor se transforma en energía interna y trabajo en un sistema térmico."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "3. ¿Qué fuerza rige el funcionamiento de un motor eléctrico?",
+        opciones: ["Faraday", "Newton", "Laplace", "Ampère"],
+        correcta: "Laplace",
+        explicacion: "El motor convierte energía eléctrica en mecánica por la ley de Laplace: F ∝ iL × B."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "4. ¿Cuál es el costo promedio nacional de electricidad en Paraguay (aprox.)?",
+        opciones: ["US¢ 2,57", "US¢ 5,00", "US¢ 7,60", "US¢ 10,00"],
+        correcta: "US¢ 7,60",
+        explicacion: "Según datos del documento, la tarifa promedio es de US¢ 7,6/kWh."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "5. ¿Qué energía es considerada secundaria?",
+        opciones: ["Petróleo", "Electricidad", "Gas natural", "Carbón"],
+        correcta: "Electricidad",
+        explicacion: "Es un producto transformado a partir de fuentes primarias."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "6. ¿Qué significa el desarrollo sostenible?",
+        opciones: [
+          "Crecimiento económico ilimitado",
+          "Uso intensivo de recursos",
+          "Satisfacer necesidades actuales sin comprometer las futuras",
+          "Producción masiva con pocos recursos"
+        ],
+        correcta: "Satisfacer necesidades actuales sin comprometer las futuras",
+        explicacion: "Es un principio base en políticas energéticas sostenibles."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "7. ¿Qué ley regula la cogeneración y autogeneración en Paraguay?",
+        opciones: ["Ley 3009/06", "Ley 9829/12", "Ley 6092/16", "Ley 1325/05"],
+        correcta: "Ley 3009/06",
+        explicacion: "Establece el régimen legal para estos métodos de producción eléctrica."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "8. ¿Qué equipo convierte energía mecánica en eléctrica?",
+        opciones: ["Motor", "Transformador", "Condensador", "Generador"],
+        correcta: "Generador",
+        explicacion: "Por inducción electromagnética, transforma energía mecánica en eléctrica."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "9. ¿Qué porcentaje del potencial hidroeléctrico paraguayo es aprovechable económicamente?",
+        opciones: ["50%", "70%", "78%", "101 TWh/año"],
+        correcta: "101 TWh/año",
+        explicacion: "De los 130 TWh/año disponibles, 101 TWh/año pueden ser explotados económicamente."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "10. ¿Qué representa el término ∂μTμν=0 en relatividad?",
+        opciones: [
+          "Una ley de gravedad",
+          "La continuidad de masa",
+          "Conservación de energía-momento",
+          "Transformación de energía térmica"
+        ],
+        correcta: "Conservación de energía-momento",
+        explicacion: "Indica que la energía y el momento se conservan a nivel relativista."
+      },
+      {
+        tipo: "vf",
+        enunciado: "11. Los generadores trifásicos usan tres bobinas a 120°.",
+        correcta: true,
+        explicacion: "Esto permite la producción de corriente alterna desfasada y más estable."
+      },
+      {
+        tipo: "vf",
+        enunciado: "12. La energía final es aquella directamente suministrada al usuario.",
+        correcta: true,
+        explicacion: "Ejemplo: la electricidad que llega al enchufe de tu casa."
+      },
+      {
+        tipo: "vf",
+        enunciado: "13. El calor latente se recupera en calderas de condensación.",
+        correcta: true,
+        explicacion: "Estas calderas aumentan eficiencia energética al reutilizar calor de gases."
+      },
+      {
+        tipo: "vf",
+        enunciado: "14. En relatividad general siempre se conserva la energía total.",
+        correcta: false,
+        explicacion: "No existe una ley global de conservación en todos los espacios-tiempo."
+      },
+      {
+        tipo: "vf",
+        enunciado: "15. Las pérdidas eléctricas en Paraguay eran del 30,9 % en 2012.",
+        correcta: true,
+        explicacion: "El material menciona ese porcentaje como cifra oficial de pérdidas."
+      },
+      {
+        tipo: "vf",
+        enunciado: "16. El desarrollo energético no está relacionado con el bienestar social.",
+        correcta: false,
+        explicacion: "Sí lo está: mayor acceso a energía mejora la calidad de vida."
+      },
+      {
+        tipo: "vf",
+        enunciado: "17. La energía de campos eléctricos y magnéticos se conserva si están confinados.",
+        correcta: true,
+        explicacion: "La energía ∝ E² + B² se mantiene constante en campos cerrados."
+      }
+    ]
+  },
+  {
+    titulo: "Examen 4",
+    preguntas: [
+      {
+        tipo: "opcion",
+        enunciado: "1. ¿Cuál es la fuente principal de electricidad en Paraguay?",
+        opciones: ["Biomasa", "Gas natural", "Hidroelectricidad", "Energía solar"],
+        correcta: "Hidroelectricidad",
+        explicacion: "El país obtiene el 99,99% de su electricidad de fuentes hidroeléctricas."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "2. ¿Qué central hidroeléctrica tiene mayor capacidad en Paraguay?",
+        opciones: ["Acaray", "Yacyretá", "Itaipú", "Ñacunday"],
+        correcta: "Itaipú",
+        explicacion: "Itaipú aporta 7.000 MW de capacidad, compartida con Brasil."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "3. ¿Cuál fue el déficit de ingresos por pérdidas eléctricas en 2012?",
+        opciones: ["US$ 100 millones", "US$ 266 millones", "US$ 50 millones", "US$ 500 millones"],
+        correcta: "US$ 266 millones",
+        explicacion: "El documento señala pérdidas por ese valor en el sistema eléctrico."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "4. ¿Qué sistema se usa para reducir consumo en motores eléctricos industriales?",
+        opciones: ["Baterías recargables", "Motores asincrónicos", "Variadores de velocidad", "Acumuladores"],
+        correcta: "Variadores de velocidad",
+        explicacion: "Permiten adaptar el consumo energético según la necesidad del proceso."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "5. ¿Cuál de estas fuentes no se comercializa a gran escala aún en Paraguay?",
+        opciones: ["Hidroelectricidad", "Gas natural", "Biomasa", "Energía eólica"],
+        correcta: "Gas natural",
+        explicacion: "Aún no existe una red de distribución masiva."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "6. ¿Qué velocidad media del viento tiene el Chaco paraguayo?",
+        opciones: ["3 m/s", "4,2 m/s", "5,5 m/s", "6,8 m/s"],
+        correcta: "5,5 m/s",
+        explicacion: "Especialmente en Boquerón y Alto Paraguay, según el documento."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "7. ¿Qué política fue establecida por el Decreto 6092/16?",
+        opciones: [
+          "Nacionalización eléctrica",
+          "Política Energética a 25 años",
+          "Reducción del IVA energético",
+          "Leyes de eficiencia para transporte"
+        ],
+        correcta: "Política Energética a 25 años",
+        explicacion: "Define estrategias a largo plazo con participación pública y privada."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "8. ¿Qué tipo de energía tiene un rendimiento de hasta 90 % en calderas comerciales?",
+        opciones: ["Solar", "Hidráulica", "Gas natural", "Eólica"],
+        correcta: "Gas natural",
+        explicacion: "En calderas de condensación, alcanza rendimientos altos gracias al calor latente."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "9. ¿Qué sector consume más electricidad en Paraguay?",
+        opciones: ["Comercial", "Industrial", "Residencial", "Agrícola"],
+        correcta: "Residencial",
+        explicacion: "Representa el 42,3% del consumo total, según el informe."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "10. ¿Qué es la entropía?",
+        opciones: [
+          "Una forma de energía térmica",
+          "La tendencia al orden",
+          "Medida del desorden y dispersión de energía",
+          "Cantidad de energía mecánica útil"
+        ],
+        correcta: "Medida del desorden y dispersión de energía",
+        explicacion: "La segunda ley de la termodinámica describe su aumento en procesos irreversibles."
+      },
+      {
+        tipo: "vf",
+        enunciado: "11. El gas natural tiene alta pureza y poder calorífico.",
+        correcta: true,
+        explicacion: "Es útil en procesos industriales como la cerámica o metalurgia."
+      },
+      {
+        tipo: "vf",
+        enunciado: "12. La electricidad es una energía primaria.",
+        correcta: false,
+        explicacion: "Es secundaria, ya que se obtiene de otras fuentes."
+      },
+      {
+        tipo: "vf",
+        enunciado: "13. El cambio climático es un fenómeno de corto plazo.",
+        correcta: false,
+        explicacion: "Implica variaciones en patrones climáticos a largo plazo."
+      },
+      {
+        tipo: "vf",
+        enunciado: "14. El hidrógeno ya se usa de forma masiva en Paraguay.",
+        correcta: false,
+        explicacion: "Aún no es una fuente de energía comercializada en el país."
+      },
+      {
+        tipo: "vf",
+        enunciado: "15. Los transformadores trabajan con corriente alterna.",
+        correcta: true,
+        explicacion: "Funcionan por inducción electromagnética, que requiere CA."
+      },
+      {
+        tipo: "vf",
+        enunciado: "16. La energía nuclear es parte de la matriz energética paraguaya.",
+        correcta: false,
+        explicacion: "No se utiliza en el país según los datos del resumen."
+      },
+      {
+        tipo: "vf",
+        enunciado: "17. El teorema de Noether vincula simetrías con conservación de energía.",
+        correcta: true,
+        explicacion: "En física lagrangiana, si el sistema no depende del tiempo, se conserva la energía."
+      }
+    ]
   }
+  
+  
   
 ];
 
