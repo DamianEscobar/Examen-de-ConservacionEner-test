@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const examenes = [
   {
@@ -8,164 +8,104 @@ const examenes = [
         tipo: "opcion",
         enunciado: "1. ¿Cuál es la principal fuente de energía de Paraguay según su matriz energética?",
         opciones: ["Carbón", "Petróleo", "Hidroelectricidad", "Energía solar"],
-        correcta: "Hidroelectricidad"
+        correcta: "Hidroelectricidad",
+        explicacion: "Paraguay se destaca por su uso casi exclusivo de energía hidroeléctrica, como la generada por Itaipú."
       },
       {
         tipo: "opcion",
-        enunciado: "2. El diagnóstico energético permite principalmente:",
-        opciones: ["Medir el nivel de contaminación ambiental", "Evaluar el confort de los usuarios", "Identificar áreas de mejora y ahorro", "Diseñar nuevos edificios energéticos"],
-        correcta: "Identificar áreas de mejora y ahorro"
-      },
-      {
-        tipo: "vf",
-        enunciado: "3. Las energías renovables siempre se convierten directamente en energía final sin pérdidas.",
-        correcta: false
-      }
-    ]
-  },
-  {
-    titulo: "Examen 2",
-    preguntas: [
-      {
-        tipo: "opcion",
-        enunciado: "1. ¿Qué porcentaje de la oferta energética de Paraguay corresponde a hidroenergía según el balance 2012?",
+        enunciado: "2. ¿Qué porcentaje de la oferta energética de Paraguay corresponde a hidroenergía según el balance 2012?",
         opciones: ["27%", "46%", "57%", "76%"],
-        correcta: "57%"
+        correcta: "57%",
+        explicacion: "Según datos del material, en 2012 la hidroenergía representaba el 57% de la oferta total."
       },
       {
         tipo: "opcion",
-        enunciado: "2. ¿Qué energía tiene un uso mayoritario en el consumo final paraguayo?",
+        enunciado: "3. ¿Qué energía tiene un uso mayoritario en el consumo final paraguayo?",
         opciones: ["Electricidad", "Hidrocarburos", "Biomasa", "Gas natural"],
-        correcta: "Biomasa"
-      },
-      {
-        tipo: "vf",
-        enunciado: "3. En la mecánica relativista, masa y energía son equivalentes.",
-        correcta: true
-      }
-    ]
-  },
-  {
-    titulo: "Examen 3",
-    preguntas: [
-      {
-        tipo: "opcion",
-        enunciado: "1. ¿Cuál de estas leyes establece la producción y transporte independiente de energía en Paraguay?",
-        opciones: ["Ley 6092/16", "Ley de Electricidad", "Ley 3009/06", "Ley de Energa Renovable"],
-        correcta: "Ley 3009/06"
+        correcta: "Biomasa",
+        explicacion: "La biomasa representa el 46% del consumo final, principalmente en zonas rurales."
       },
       {
         tipo: "opcion",
-        enunciado: "2. ¿Cuál es el objetivo principal de la cogeneración?",
-        opciones: ["Almacenar energía eléctrica", "Generar energía nuclear", "Aprovechar el calor residual", "Crear energía solar"],
-        correcta: "Aprovechar el calor residual"
+        enunciado: "4. ¿Qué es un prosumidor?",
+        opciones: ["Un proveedor eléctrico", "Un auditor energético", "Quien produce y consume energía", "Un transformador"],
+        correcta: "Quien produce y consume energía",
+        explicacion: "Prosumidor = productor + consumidor, generalmente con paneles solares u otras fuentes propias."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "5. ¿Cuál es el objetivo principal de la cogeneración?",
+        opciones: ["Almacenar energía", "Aprovechar calor residual", "Convertir energía nuclear", "Reducir el voltaje"],
+        correcta: "Aprovechar calor residual",
+        explicacion: "La cogeneración permite reutilizar el calor producido durante la generación eléctrica."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "6. ¿Qué ley permite producción y transporte independiente de energía?",
+        opciones: ["Ley 6092/16", "Ley de Energía Verde", "Ley 3009/06", "Ley Nacional de Electricidad"],
+        correcta: "Ley 3009/06",
+        explicacion: "La Ley 3009/06 establece las bases legales del régimen de producción y comercialización de energía."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "7. ¿Qué gas de efecto invernadero es más común en actividades humanas?",
+        opciones: ["Ozono", "Metano", "Vapor de agua", "Dióxido de carbono (CO2)"],
+        correcta: "Dióxido de carbono (CO2)",
+        explicacion: "El CO2 es el principal gas emitido por la quema de combustibles fósiles."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "8. ¿Qué unidad mide la energía eléctrica?",
+        opciones: ["Voltios", "Watts", "Kilovatios hora", "Amperios"],
+        correcta: "Kilovatios hora",
+        explicacion: "El kWh mide cuánta energía se ha utilizado en una hora."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "9. ¿Qué porcentaje de cobertura eléctrica tenía Paraguay en 2009?",
+        opciones: ["75%", "88%", "98%", "100%"],
+        correcta: "98%",
+        explicacion: "Según el documento, en 2009 Paraguay alcanzó el 98% de cobertura eléctrica."
+      },
+      {
+        tipo: "opcion",
+        enunciado: "10. ¿Cuál es la fórmula de la energía en reposo según la teoría de Einstein?",
+        opciones: ["F = ma", "E = mc²", "P = V·I", "Q = m·c·?T"],
+        correcta: "E = mc²",
+        explicacion: "Einstein propuso que la energía en reposo de un cuerpo es igual a su masa por la velocidad de la luz al cuadrado."
       },
       {
         tipo: "vf",
-        enunciado: "3. Los generadores trifásicos producen corrientes desfasadas a 120 grados entre bobinas.",
-        correcta: true
+        enunciado: "11. La eficiencia energética permite reducir emisiones.",
+        correcta: true,
+        explicacion: "Menor consumo energético = menor generación = menos emisiones."
+      },
+      {
+        tipo: "vf",
+        enunciado: "12. Los transformadores funcionan con corriente continua.",
+        correcta: false,
+        explicacion: "Los transformadores solo funcionan con corriente alterna."
+      },
+      {
+        tipo: "vf",
+        enunciado: "13. La Ley 3009/06 regula la cogeneración y autogeneración eléctrica.",
+        correcta: true,
+        explicacion: "Esta ley habilita esos modelos de producción bajo licencia."
+      },
+      {
+        tipo: "vf",
+        enunciado: "14. El gas natural es la principal fuente energética del Paraguay.",
+        correcta: false,
+        explicacion: "El Paraguay no tiene una red importante de gas natural. Su matriz es mayormente hidráulica."
+      },
+      {
+        tipo: "vf",
+        enunciado: "15. Un prosumidor puede conectarse a la red eléctrica.",
+        correcta: true,
+        explicacion: "Puede consumir y entregar excedente a la red, según la normativa vigente."
       }
     ]
   }
-]
+];
 
-export default function Examenes() {
-  const [seleccionado, setSeleccionado] = useState(0)
-  const [respuestas, setRespuestas] = useState({})
-  const [mostrarResultado, setMostrarResultado] = useState(false)
-
-  const preguntas = examenes[seleccionado].preguntas
-
-  const handleChange = (index, value) => {
-    setRespuestas({ ...respuestas, [index]: value })
-  }
-
-  const calcularResultado = () => {
-    let correctas = 0
-    preguntas.forEach((p, i) => {
-      const respuestaUsuario = respuestas[i]
-      if (p.tipo === "opcion" && respuestaUsuario === p.correcta) correctas++
-      if (p.tipo === "vf" && ((respuestaUsuario === "V" && p.correcta) || (respuestaUsuario === "F" && !p.correcta))) correctas++
-    })
-    return correctas
-  }
-
-  return (
-    <div className="p-6 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Exámenes de Conservación de Energía</h1>
-
-      <div className="mb-4 space-x-2">
-        {examenes.map((examen, idx) => (
-          <button
-            key={idx}
-            onClick={() => {
-              setSeleccionado(idx)
-              setRespuestas({})
-              setMostrarResultado(false)
-            }}
-            style={{ padding: "0.4rem 1rem", backgroundColor: "#007BFF", color: "#fff", border: "none", borderRadius: "5px" }}
-          >
-            {examen.titulo}
-          </button>
-        ))}
-      </div>
-
-      {preguntas.map((p, i) => (
-        <div key={i} style={{ marginBottom: "1.5rem", backgroundColor: "#fff", padding: "1rem", borderRadius: "10px", boxShadow: "0 2px 6px rgba(0,0,0,0.1)" }}>
-          <p style={{ fontWeight: "bold" }}>{p.enunciado}</p>
-          {p.tipo === "opcion" ? (
-            p.opciones.map((op, idx) => (
-              <div key={idx}>
-                <label>
-                  <input
-                    type="radio"
-                    name={`pregunta-${i}`}
-                    value={op}
-                    checked={respuestas[i] === op}
-                    onChange={(e) => handleChange(i, e.target.value)}
-                  />{" "}
-                  {op}
-                </label>
-              </div>
-            ))
-          ) : (
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name={`pregunta-${i}`}
-                  value="V"
-                  checked={respuestas[i] === "V"}
-                  onChange={(e) => handleChange(i, e.target.value)}
-                />{" "}
-                Verdadero
-              </label>
-              <br />
-              <label>
-                <input
-                  type="radio"
-                  name={`pregunta-${i}`}
-                  value="F"
-                  checked={respuestas[i] === "F"}
-                  onChange={(e) => handleChange(i, e.target.value)}
-                />{" "}
-                Falso
-              </label>
-            </div>
-          )}
-        </div>
-      ))}
-
-      <button onClick={() => setMostrarResultado(true)} style={{ padding: "0.5rem 1.5rem", backgroundColor: "#28a745", color: "white", border: "none", borderRadius: "5px" }}>
-        Finalizar Examen
-      </button>
-
-      {mostrarResultado && (
-        <div style={{ marginTop: "1rem", backgroundColor: "#e2fbe2", padding: "1rem", borderRadius: "10px" }}>
-          <h2 className="text-xl font-bold">Resultado</h2>
-          <p className="text-lg">Respuestas correctas: {calcularResultado()} de {preguntas.length}</p>
-        </div>
-      )}
-    </div>
-  )
-}
+export default examenes;
