@@ -74,6 +74,33 @@ export default function App() {
 
   return (
     <div className="p-6 max-w-3xl mx-auto">
+
+      {/* Viñetas para cambiar entre exámenes */}
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+        {examenes.map((ex, i) => (
+          <button
+            key={i}
+            onClick={() => {
+              setSeleccionado(i)
+              setRespuestas({})
+              setMostrarResultado(false)
+            }}
+            style={{
+              padding: '0.4rem 1rem',
+              borderRadius: '20px',
+              border: 'none',
+              backgroundColor: i === seleccionado ? '#007BFF' : '#ddd',
+              color: i === seleccionado ? 'white' : 'black',
+              cursor: 'pointer',
+              fontWeight: 'bold'
+            }}
+          >
+            {ex.titulo}
+          </button>
+        ))}
+      </div>
+
+
       <h1 className="text-2xl font-bold mb-4">Examen: {examenes[seleccionado].titulo}</h1>
 
       {preguntas.map((p, i) => (
@@ -130,6 +157,28 @@ export default function App() {
               <span style={{ fontStyle: 'italic', color: '#333' }}>{p.explicacion}</span>
             </p>
           )}
+
+          {mostrarResultado && (
+            <button
+              onClick={() => {
+                setRespuestas({})
+                setMostrarResultado(false)
+              }}
+              style={{
+                marginTop: '1rem',
+                padding: '0.5rem 1.5rem',
+                backgroundColor: '#ffc107',
+                color: 'black',
+                border: 'none',
+                borderRadius: '5px',
+                cursor: 'pointer',
+                fontWeight: 'bold'
+              }}
+            >
+              Reiniciar este examen
+            </button>
+          )}
+
         </div>
       ))}
 
